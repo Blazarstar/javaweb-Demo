@@ -62,19 +62,9 @@
 
   - 完成生成随机验证码的Servlet
 
-    - 使用Servlet来完成对应的功能创建`ImageServlet`类并继承自`HttpServlet`类，编写`doGet()`方法
-
   - 完成刷新更换验证码的功能
 
-    - 查阅API，`BufferedImage`类似乎用于将图片存入缓存中，在这里我调用的构造方法有三个参数，分别对应图片的宽高和创建的图像格式。此处的`BufferedImage.TYPE_INT_RGB`是一个类成员属性。详见API。
-
   - 完成验证验证码是否正确是Servlet
-
-    - 创建session并添加`sb.toString()`用于实现判断
-
-      最后一个方法是我觉得最迷的- -！`ImageIO.write()`方法，API中有三种构造方法，用于将`ImageWriter`按指定格式以三种不同方式输出。
-
-      
 
   ![1573611974847](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\1573611974847.png)
 
